@@ -27,5 +27,10 @@ Install all development tools including:
 - vim
 - vscode
 - golang
+- gopls
 - docker
+- vscode extension and setting
 
+```
+bash ./setup.sh
+```

@@ -3,6 +3,8 @@ sudo apt install -y vim
 
 #set vim as default editor
 echo "export EDITOR=$(which vim)" >> ~/.profile
+echo "export GOPATH=$HOME/go" >> ~/.profile
+echo "export PATH=$GOPATH/bin:$PATH" >> ~/.profile
 #disable terminal alert sounds
 echo "bind 'set bell-style none'" >> ~/.bashrc
 
@@ -31,3 +33,9 @@ sudo snap install --classic code
 
 # install golang
 sudo snap install --classic go
+
+code --install-extension ms-vscode.Go
+
+cp ./settings.json $HOME/.config/Code/User/settings.json
+
+
